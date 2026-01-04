@@ -41,10 +41,11 @@ body {
   height: 180px;
   border-radius: 50%;
   object-fit: cover;
-  border: 5px solid white;
+  border: 5px solid #ffffff;
   margin-bottom: 20px;
 }
 
+/* Titles */
 .hero h2 {
   font-size: 26px;
   margin-bottom: 15px;
