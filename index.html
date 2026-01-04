@@ -5,11 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mostafa Nour | Software Developer</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="dark">
+<body>
 
+  <!-- HERO -->
   <header class="hero" id="hero">
     <nav class="nav">
       <h1>Mostafa Nour</h1>
@@ -17,28 +20,49 @@
     </nav>
 
     <div class="hero-content">
-      <h2>Software Developer</h2>
+
+      <!-- الصورة (نضيفها بعدين) -->
+      <div class="profile-placeholder">
+        صورتك هنا
+      </div>
+
+      <h2>Software Developer | مطور برمجيات</h2>
+
       <p>
         I build practical software solutions focused on automation,
         web development, and AI-powered systems.
+        <br>
+        <span class="arabic">
+          أعمل على تطوير حلول برمجية عملية تركز على الأتمتة،
+          تطوير الويب، والأنظمة الذكية.
+        </span>
       </p>
+
       <div class="buttons">
         <a href="#projects">View Projects</a>
         <a href="#contact" class="outline">Contact Me</a>
       </div>
+
     </div>
   </header>
 
+  <!-- ABOUT -->
   <section id="about">
-    <h2>About Me</h2>
+    <h2>About Me | نبذة عني</h2>
     <p>
-      Information Systems student and self-taught software developer focused on
-      automation, bots, and practical software solutions.
+      Information Systems student and self-taught software developer
+      with a strong focus on real-world projects and automation.
+      <br>
+      <span class="arabic">
+        طالب نظم معلومات ومطور برمجيات أعتمد على التعلم الذاتي
+        وبناء مشاريع عملية في الأتمتة والبوتات والذكاء الاصطناعي.
+      </span>
     </p>
   </section>
 
+  <!-- SKILLS -->
   <section id="skills">
-    <h2>Skills</h2>
+    <h2>Skills | المهارات</h2>
     <div class="grid">
       <div class="card">Python</div>
       <div class="card">JavaScript</div>
@@ -49,35 +73,57 @@
     </div>
   </section>
 
+  <!-- PROJECTS -->
   <section id="projects">
-    <h2>Projects</h2>
+    <h2>Projects | المشاريع</h2>
     <div class="grid">
+
       <div class="card">
         <h3>AI Telegram Bot</h3>
-        <p>AI-powered bot helping students understand and solve curriculum questions.</p>
+        <p>
+          AI-powered bot that helps students understand curriculum content.
+          <br>
+          <span class="arabic">
+            بوت ذكي يساعد الطلاب على فهم وحل أسئلة المنهج.
+          </span>
+        </p>
         <a href="#">View Project</a>
       </div>
 
       <div class="card">
         <h3>Mobile Game</h3>
-        <p>Simple learning-focused mobile game.</p>
+        <p>
+          Simple educational mobile game focused on logic and interaction.
+          <br>
+          <span class="arabic">
+            لعبة موبايل بسيطة للتعلم وتنمية التفكير.
+          </span>
+        </p>
         <a href="#">View Project</a>
       </div>
 
       <div class="card">
         <h3>Web Automation</h3>
-        <p>Automation scripts to simplify repetitive tasks.</p>
+        <p>
+          Automation scripts to simplify repetitive tasks.
+          <br>
+          <span class="arabic">
+            مشاريع أتمتة لتسهيل المهام المتكررة.
+          </span>
+        </p>
         <a href="#">View Project</a>
       </div>
+
     </div>
   </section>
 
+  <!-- CONTACT -->
   <section id="contact">
-    <h2>Contact Me</h2>
+    <h2>Contact Me | تواصل معي</h2>
     <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
+      <input type="text" placeholder="Your Name | اسمك" required>
+      <input type="email" placeholder="Your Email | بريدك الإلكتروني" required>
+      <textarea placeholder="Your Message | رسالتك" required></textarea>
       <button type="submit">Send Message</button>
     </form>
   </section>
