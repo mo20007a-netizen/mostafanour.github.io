@@ -1,198 +1,62 @@
-here<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mostafa Nour | Portfolio</title>
-
-  <!-- FORCE STYLE (NO CSS LOAD ISSUES) -->
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      background: #0e2a47;
-      color: #ffffff;
-      font-family: system-ui, sans-serif;
-      line-height: 1.7;
-    }
-
-    header {
-      padding: 20px;
-    }
-
-    header h1 {
-      font-size: 32px;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 60px 20px;
-    }
-
-    .profile-img {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      border: 5px solid #ffffff;
-      object-fit: cover;
-      margin-bottom: 25px;
-    }
-
-    .hero h2 {
-      font-size: 28px;
-      margin-bottom: 15px;
-    }
-
-    .hero p {
-      max-width: 720px;
-      margin: 10px auto;
-      font-size: 16px;
-    }
-
-    .arabic {
-      direction: rtl;
-    }
-
-    .buttons {
-      margin-top: 25px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 12px 24px;
-      margin: 6px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      background: #ffffff;
-      color: #0e2a47;
-    }
-
-    .btn.outline {
-      background: transparent;
-      color: #ffffff;
-      border: 2px solid #ffffff;
-    }
-
-    section {
-      padding: 70px 20px;
-      text-align: center;
-    }
-
-    section h3 {
-      font-size: 26px;
-      margin-bottom: 20px;
-    }
-
-    section p {
-      max-width: 720px;
-      margin: 10px auto;
-    }
-
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-      margin-top: 20px;
-    }
-
-    .skills span {
-      background: #133a5e;
-      padding: 10px 18px;
-      border-radius: 20px;
-      font-size: 14px;
-    }
-
-    footer {
-      padding: 30px;
-      text-align: center;
-      opacity: 0.7;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <!-- Header -->
+  <header class="top-bar">
+    <h1>Mostafa Nour</h1>
+    <button id="toggle">🌞</button>
+  </header>
 
-<header>
-  <h1>Mostafa Nour</h1>
-</header>
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="me.jpg" alt="Mostafa Nour" class="profile-img"/>
 
-<!-- HERO -->
-<div class="hero">
-  <img src="1767559200023.jpg" alt="Mostafa Nour" class="profile-img"/>
+    <h2>
+      Software Developer | <span class="arabic">مطور برمجيات</span>
+    </h2>
 
-  <h2>Software Developer | مطور برمجيات</h2>
+    <p class="en">
+      I build practical software solutions focused on automation, web development,
+      and AI-powered systems.
+    </p>
 
-  <p>
-    I build practical software solutions focused on automation,
-    web development, and AI-powered systems.
-  </p>
+    <p class="ar">
+      أعمل على تطوير حلول برمجية عملية تركز على الأتمتة،
+      تطوير الويب، والأنظمة الذكية.
+    </p>
 
-  <p class="arabic">
-    أعمل على تطوير حلول برمجية عملية تركز على الأتمتة،
-    تطوير الويب، والأنظمة الذكية.
-  </p>
+    <div class="buttons">
+      <a href="#projects" class="btn primary">View Projects</a>
+    </div>
+  </section>
 
-  <div class="buttons">
-    <a href="#projects" class="btn">View Projects</a>
-    <a href="#contact" class="btn outline">Contact Me</a>
-  </div>
-</div>
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projects | <span class="arabic">المشاريع</span></h2>
 
-<!-- ABOUT -->
-<section id="about">
-  <h3>About Me | عني</h3>
-  <p>
-    I am an Information Systems student and software developer with a strong
-    self-learning mindset focused on real-world applications.
-  </p>
-  <p class="arabic">
-    أنا طالب نظم معلومات ومطور برمجيات، أعتمد على التعلم الذاتي
-    وبناء حلول عملية حقيقية.
-  </p>
-</section>
+    <p class="en">
+      AI-powered Telegram bots, automation tools, and experimental web projects
+      solving real problems.
+    </p>
 
-<!-- SKILLS -->
-<section id="skills">
-  <h3>Skills | المهارات</h3>
-  <div class="skills">
-    <span>Python</span>
-    <span>JavaScript</span>
-    <span>HTML & CSS</span>
-    <span>Web Automation</span>
-    <span>Telegram Bots</span>
-    <span>Git & GitHub</span>
-  </div>
-</section>
+    <p class="ar">
+      بوتات تيليجرام ذكية، أدوات أتمتة، ومشاريع ويب تجريبية
+      لحل مشاكل حقيقية.
+    </p>
+  </section>
 
-<!-- PROJECTS -->
-<section id="projects">
-  <h3>Projects | المشاريع</h3>
-  <p>
-    AI-powered Telegram bots, automation tools, and experimental web projects
-    solving real problems.
-  </p>
-  <p class="arabic">
-    بوتات تيليجرام ذكية، أدوات أتمتة، ومشاريع ويب تجريبية
-    لحل مشاكل حقيقية.
-  </p>
-</section>
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Mostafa Nour</p>
+  </footer>
 
-<!-- CONTACT -->
-<section id="contact">
-  <h3>Contact | تواصل معي</h3>
-  <p>Email: mostafa@example.com</p>
-  <p>GitHub: github.com/mostafanour</p>
-</section>
-
-<footer>
-  <p>© 2026 Mostafa Nour</p>
-</footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
