@@ -1,13 +1,6 @@
-const toggle = document.getElementById("themeToggle");
-
-// تأكيد إن الموقع يبدأ دايمًا Dark
-document.body.classList.remove("light");
-toggle.textContent = "🌞";
+hereconst toggle = document.getElementById("toggle");
 
 toggle.addEventListener("click", () => {
-  document.body.classList.toggle("light");
-
-  toggle.textContent = document.body.classList.contains("light")
-    ? "🌙"
-    : "🌞";
+  // مجرد أيقونة شكلية فقط
+  toggle.textContent = toggle.textContent === "🌞" ? "🌙" : "🌞";
 });
